@@ -1,0 +1,6 @@
+//Jobs are globally defined functions that execute in the Windows client runtime envrionment
+static void DAXJob(Args _args)
+{
+    print "Dynamics AX 2012";
+    pause;
+}
