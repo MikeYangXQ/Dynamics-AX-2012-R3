@@ -1,7 +1,7 @@
 
 ///<Summary>
 /// Comment here will be extracted into XML
-/// <Summary>
+/// </Summary>
 /*
 This is a block comment!
 */
@@ -11,6 +11,29 @@ This is a block comment!
 //Can only ce renamed in code editor
 static void DAXJob(Args _args)
 {
+    //variable should be on top of code
+    str string;
+    int integer;
+    real decimal;
+    date DMY = today();
+    utcDateTime datetime = DateTimeUtil::parse("1988-07-20T13:34:45");
+    NoYes choice;
+    boolean bool;
+    guid id;
+    int64 bigInt;
+    
     print "Dynamics AX 2012";
+    //info("Microsoft Dynamics AX is a ERP solution!");
+    
+    print ("*************" + string);
+    print integer; //0
+    print decimal; //0.00
+    print DMY; //mm/dd/yyyy
+    print datetime2str(datetime);
+    print choice; //NO
+    print bool; //false
+    print id;//0000--0000-000-000
+    print bigInt; //0
+   
     pause;
 }
