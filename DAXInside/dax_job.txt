@@ -11,7 +11,7 @@ This is a block comment!
 //Can only ce renamed in code editor
 static void DAXJob(Args _args)
 {
-    //variable should be on top of code
+     //variable should be on top of code
     str string;
     int integer;
     real decimal;
@@ -22,9 +22,17 @@ static void DAXJob(Args _args)
     guid id;
     int64 bigInt;
     
+    real realUnlimitedArray[];//reference array
+    real realLimitedArray[10];  
+ 
+    container c;//reference type container
+    int i,j;
+    str txt;
+    
+    realLimitedArray[2] = 3.142;
     print "Dynamics AX 2012";
     //info("Microsoft Dynamics AX is a ERP solution!");
-    
+
     print ("*************" + string);
     print integer; //0
     print decimal; //0.00
@@ -34,6 +42,15 @@ static void DAXJob(Args _args)
     print bool; //false
     print id;//0000--0000-000-000
     print bigInt; //0
+    
+    print realLimitedArray[2];//3.14
+    c = [10, 20, "test"];
+    
+    print conPeek(c,3);
+    [i,j,txt] = c; // assign values from container
+    print i;
+    print j;
+    print txt;  
    
     pause;
 }
