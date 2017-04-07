@@ -1,4 +1,6 @@
 //Jobs are globally defined functions that execute in the Windows client runtime envrionment
+//Job is useful for testing code block before inserting into method or class
+//Can only ce renamed in code editor
 static void DAXJob(Args _args)
 {
     print "Dynamics AX 2012";
